@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal for My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fdfdfd;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 40px;
+            background: #f7c6d6;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            text-align: center;
+        }
+        .text-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .heart {
+            font-size: 80px;
+            color: #ff6f61;
+        }
+        h2 {
+            color: #333;
+            font-size: 30px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            font-size: 20px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #ff3b2a;
+        }
+        .footer {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Thank you message styling */
+        #thankYouPage {
+            display: none;
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        #thankYouPage h2 {
+            color: #ff6f61;
+            font-size: 36px;
+        }
+        #thankYouPage p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Will You Be Mine Forever? 💍
+    </div>
+    <div class="container">
+        <div class="text-content">
+            <div class="heart">❤️</div>
+            <h2>To the Love of My Life</h2>
+            <p>
+                From the moment we met, my heart knew that you were the one I would love forever. Every second with you is a beautiful memory. 
+                You make my world brighter, my dreams bigger, and my heart fuller. 
+                You are my happiness, my support, and my reason to smile every single day.
+            </p>
+            <p>
+                I want to spend my whole life making you smile, loving you, and cherishing you. 
+                Will you make me the happiest person on Earth by saying "Yes" and being mine forever? 💍
+            </p>
+            <button class="button" id="yesButton">Yes, I will!</button>
+        </div>
+    </div>
+    <div class="footer">
+        Made with all my love ❤️
+    </div>
+
+    <!-- Thank You Page -->
+    <div id="thankYouPage">
+        <h2>Thank You My Love!</h2>
+        <p>
+            You have made my dreams come true, and my heart is filled with joy. 
+            Thank you for being the best part of my life. I am so grateful for your love, 
+            and I can't wait to spend forever with you. 
+            You mean the world to me! 💖
+        </p>
+        <p>With all my love, forever and always...</p>
+    </div>
+
+    <script>
+        // Get the "Yes" button and the thank you page
+        const yesButton = document.getElementById('yesButton');
+        const thankYouPage = document.getElementById('thankYouPage');
+
+        // Event listener for the "Yes" button click
+        yesButton.addEventListener('click', () => {
+            // Hide the proposal content and show the thank you page
+            document.querySelector('.container').style.display = 'none';
+            thankYouPage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
